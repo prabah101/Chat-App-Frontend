@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import styled from 'styled-components'
-import loader from "../assets/loader.gif"
+import loader from "../assets/loading-2.gif"
 import {ToastContainer, toast} from 'react-toastify'
 import "react-toastify/dist/ReactToastify.css"
 import axios from 'axios'
@@ -74,7 +74,7 @@ export default function SetAvatar() {
     <>
       {
         isLoading ? ( 
-        <div className="container">
+        <div className="container loading-container">
           <img src={loader} alt='loader' className="loader" />
         </div> 
         ) : (

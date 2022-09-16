@@ -2,7 +2,7 @@
     display: grid;
     align-items: center;
     grid-template-columns: 5% 95%;
-    background-color: #080420;
+    background-color: #40444B;
     padding: 0 2rem;
 }
   @media screen and (min-width: 720px) and (max-width: 1080px) {
@@ -53,12 +53,13 @@
     background-color: #080420;
 }
   .input-container {
+    color: #655951;
     width: 100%;
     border-radius: 2rem;
     display: flex;
     align-items: center;
     gap: 2rem;
-    background-color: #ffffff34;
+    background-color: #292B2F;
 }
 .input-container input {
   width: 90%;
@@ -84,7 +85,7 @@ button.submit {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #9a86f3;
+    background-color: #6B8FF9;
     border: none;
 }
 @media screen and (min-width: 720px) and (max-width: 1080px) {

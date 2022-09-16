@@ -1,14 +1,22 @@
 .contacts-container{
     display: grid;
-    grid-template-rows: 10% 75% 15%;
+    grid-template-rows: 10% 80% 10%;
     overflow: hidden;
-    background-color: #080420;
+    gap: 0.1rem;
+    background-color: #2F3136;
+}
+
+@media screen and (min-width: 720px) and (max-width: 1080px) {
+    .contacts-container{
+        grid-template-rows: 15% 70% 15%;
+    }
 }
   .brand {
     display: flex;
     align-items: center;
     gap: 1rem;
     justify-content: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 .brand img {
   height: 2.5rem;
@@ -18,6 +26,7 @@
   text-transform: uppercase;
 }
 .contacts {
+    padding-top: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -42,7 +51,7 @@
     display: flex;
     gap: 1rem;
     align-items: center;
-    transition: 0.5s ease-in-out;
+    transition: 0.25s ease-in-out;
 }
 .contact .avatar img {
     height: 3rem;
@@ -50,27 +59,25 @@
 .contact .username h3 {
     color: white;
 }
-.selected {
-    background-color: #9a86f3;
+.contact.selected {
+    border: none;
+    background-color: #3C3F45;
 }
 .current-user {
-    background-color: #0d0d30;
+    background-color: #292B2F;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 0.5rem;
 }
 .current-user .avatar img {
-    height: 4rem;
+    height: 3rem;
     max-inline-size: 100%;
 }
 .current-user .username h2 {
     color: white;
 }
 @media screen and (min-width: 720px) and (max-width: 1080px) {
-    .contacts-container{
-        gap: 0.5rem;
-    }
     .username h2 {
         font-size: 1rem;
     }
