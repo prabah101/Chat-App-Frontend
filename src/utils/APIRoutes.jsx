@@ -1,4 +1,4 @@
-export const host = 'https://chartreuse-green-caterpillar-yoke.cyclic.app'
+export const host = 'https://chat-app-backend-0xj0.onrender.com'
 
 export const registerRoute = `${host}/api/auth/register`
 export const loginRoute = `${host}/api/auth/login`
